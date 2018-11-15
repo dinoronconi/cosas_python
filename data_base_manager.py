@@ -20,7 +20,7 @@ try:
         if count >= 1000:
             break
         dato1= count
-        dato2= 'campo2 numero '+str(count)
+        dato2= 'campo 2 numero '+str(count)
         miCursorWrite.execute("INSERT into Prueba(campo1, campo2) values(:dato1, :dato2)", (dato1, dato2))
 
     con.commit()
